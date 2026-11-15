@@ -1,0 +1,11 @@
+node_modules/
+.npm-cache/
+.verify/
+backend/node_modules/
+backend/dist/
+backend/src/generated/
+**/.env
+**/.env.*
+!**/.env.example
+frontend/node_modules/
+frontend/dist/

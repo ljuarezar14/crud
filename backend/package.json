@@ -1,0 +1,43 @@
+{
+  "name": "crud-backend",
+  "version": "1.0.0",
+  "description": "Backend educativo CRUD - Node.js + Express + Prisma + PostgreSQL",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "node scripts/dev.cjs",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "start": "node dist/index.js",
+    "db:generate": "node scripts/prisma.cjs generate",
+    "db:check": "node scripts/check-db.cjs",
+    "db:migrate": "node scripts/prisma.cjs migrate dev",
+    "db:studio": "node scripts/prisma.cjs studio",
+    "db:seed": "node scripts/seed.cjs"
+  },
+  "keywords": [
+    "crud",
+    "express",
+    "prisma",
+    "postgresql",
+    "typescript"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/adapter-pg": "^7.10.1",
+    "@prisma/client": "^7.10.1",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0",
+    "pg": "^8.23.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.6",
+    "@types/pg": "^8.23.1",
+    "prisma": "^7.10.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^7.0.2"
+  }
+}

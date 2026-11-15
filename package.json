@@ -1,0 +1,28 @@
+{
+  "name": "crud-lab",
+  "private": true,
+  "type": "module",
+  "description": "Dependencias compartidas del proyecto educativo",
+  "scripts": {
+    "dev:backend": "npm --prefix backend run dev",
+    "build:backend": "npm --prefix backend run build",
+    "typecheck": "npm --prefix backend run typecheck && npm --prefix frontend run typecheck",
+    "lint": "eslint backend/src backend/scripts backend/tests backend/prisma.config.ts frontend/src frontend/vite.config.ts vitest.config.ts eslint.config.mjs",
+    "format": "prettier --write \"backend/src/**/*.{ts,tsx}\" \"backend/scripts/*.cjs\" \"backend/tests/*.ts\" \"frontend/src/**/*.{ts,tsx,css}\" backend/prisma.config.ts frontend/vite.config.ts vitest.config.ts eslint.config.mjs",
+    "format:check": "prettier --check \"backend/src/**/*.{ts,tsx}\" \"backend/scripts/*.cjs\" \"backend/tests/*.ts\" \"frontend/src/**/*.{ts,tsx,css}\" backend/prisma.config.ts frontend/vite.config.ts vitest.config.ts eslint.config.mjs",
+    "test": "node backend/scripts/run-tests.cjs"
+  },
+  "dependencies": {
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/supertest": "^6.0.3",
+    "eslint": "^10.15.0",
+    "jsdom": "^26.1.0",
+    "prettier": "^3.10.1",
+    "supertest": "^7.3.2",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.72.2",
+    "vitest": "^4.1.12"
+  }
+}

@@ -1,0 +1,23 @@
+# Dependencias instaladas
+node_modules/
+
+# Build compilado
+dist/
+src/generated/
+
+# Variables de entorno con credenciales reales - NUNCA a Git
+.env
+.env.local
+.env.production
+
+# Logs
+*.log
+npm-debug.log*
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+*.swp
